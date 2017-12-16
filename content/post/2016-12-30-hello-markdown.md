@@ -16,5 +16,5 @@ library(ggplot2)
 
 Next, we must extract the data. 
 
-![]("\Pictures\barplot.PNG")
+![]()
 

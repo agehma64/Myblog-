@@ -20,7 +20,7 @@
       <description>Here I will explain how to create bar plots in R Studio using the Lahman Baseball Package as an example.
 First we must load the libraries:
 library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Next, we must extract the data.
-![](&amp;rdquo;\Pictures\barplot.PNG&amp;rdquo;)</description>
+![]()</description>
     </item>
     
     <item>
@@ -29,7 +29,9 @@ library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Next, we must
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
       <guid>/about/</guid>
-      <description>This is a blog talking about my experience so far at Mercyhurst University and how it is going for me.</description>
+      <description>This blog is meant to explain the course content that we learned during the first half of the year regarding Bar Plots, Histograms, Scatterplots, and Timeseries.
+I will include all the steps on how to do so through the seperate links on the home page
+Thank you to Dr. Redmond!</description>
     </item>
     
     <item>
