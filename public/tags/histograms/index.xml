@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Histograms on A Hugo website</title>
+    <link>/tags/histograms/</link>
+    <description>Recent content in Histograms on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/histograms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Histograms </title>
+      <link>/2017/12/16/histograms/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/16/histograms/</guid>
+      <description>First we must load the necessary packages.
+library(Lahman) library(sqldf) library(ggplot2)  Then we must extract the data in order to get our final results.
+query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) #visualizing the data ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;)  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.31.1" />
 
 
-<title>Time Series  - A Hugo website</title>
-<meta property="og:title" content="Time Series  - A Hugo website">
+<title>Scatter Plots - A Hugo website</title>
+<meta property="og:title" content="Scatter Plots - A Hugo website">
 
 
 
@@ -62,14 +62,16 @@
     <span class="article-duration">1 min read</span>
     
 
-    <h1 class="article-title">Time Series </h1>
+    <h1 class="article-title">Scatter Plots</h1>
 
     
     <span class="article-date">2017/12/16</span>
     
 
     <div class="article-content">
-      <p>The x axis represents time, while the y is variable of your choice. First we load the libraries</p>
+      <p>If one would like to find the career strikeouts versus homeruns for great hitters within the baseball world, they can make a scatterplot to show the data found. One can do this using R code, like so.</p>
+
+<p>First we must load the necessary packages:</p>
 
 <pre><code>library(Lahman)
 library(sqldf)
@@ -77,22 +79,24 @@ library(devtools)
 library(ggplot2)
 </code></pre>
 
-<p>Then we must extract the data, in order to get the time series.</p>
+<p>Then we must extract the data:</p>
 
-<pre><code>query&lt;-&quot;SELECT yearID,HR FROM Batting WHERE playerID='ruthba01'&quot;
+<pre><code>query&lt;-&quot;SELECT playerID,sum(HR) AS career_HR,
+sum(SO) AS career_SO FROM Batting 
+GROUP BY playerID HAVING sum(HR)&gt;=400&quot;
 
 result&lt;-sqldf(query)
 
+#visualizing data
 
 ggplot()+
-  geom_point(data=result,aes(x=yearID,y=HR),color=&quot;black&quot;)+
-  geom_line(data=result,aes(x=yearID,y=HR),color=&quot;blue&quot;)+
-  ggtitle(&quot;Ruth's Homerun Totals Through the Years&quot;)+
-  xlab(&quot;Year&quot;)+
-  ylab(&quot;Homeruns&quot;)
+  geom_point(data=result,aes(x=career_SO,y=career_HR), size=1,color=&quot;green&quot;)+
+  ggtitle(&quot;Career Strikeouts v. Homeruns for Great Hitters&quot;)+
+  xlab(&quot;Career Strikeouts&quot;)+
+  ylab(&quot;Career Homeruns&quot;)
 </code></pre>
 
-<p><img src="https://hutton.netlify.com/post/2017-10-10-time-series_files/figure-html/unnamed-chunk-2-1.png" alt="" /></p>
+<p><img src="https://hutton.netlify.com/post/2017-10-10-scatter-batter_files/figure-html/unnamed-chunk-2-1.png" alt="" /></p>
 
     </div>
   </article>

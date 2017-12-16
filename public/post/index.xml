@@ -24,6 +24,29 @@ query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&
     </item>
     
     <item>
+      <title>Histograms </title>
+      <link>/2017/12/16/histograms/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/16/histograms/</guid>
+      <description>First we must load the necessary packages.
+library(Lahman) library(sqldf) library(ggplot2)  Then we must extract the data in order to get our final results.
+query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) #visualizing the data ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;)  </description>
+    </item>
+    
+    <item>
+      <title>Scatter Plots</title>
+      <link>/2017/12/16/scatter-plots/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/16/scatter-plots/</guid>
+      <description>If one would like to find the career strikeouts versus homeruns for great hitters within the baseball world, they can make a scatterplot to show the data found. One can do this using R code, like so.
+First we must load the necessary packages:
+library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Then we must extract the data:
+query&amp;lt;-&amp;quot;SELECT playerID,sum(HR) AS career_HR, sum(SO) AS career_SO FROM Batting GROUP BY playerID HAVING sum(HR)&amp;gt;=400&amp;quot; result&amp;lt;-sqldf(query) #visualizing data ggplot()+ geom_point(data=result,aes(x=career_SO,y=career_HR), size=1,color=&amp;quot;green&amp;quot;)+ ggtitle(&amp;quot;Career Strikeouts v.</description>
+    </item>
+    
+    <item>
       <title>Time Series</title>
       <link>/2017/12/16/time-series/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
@@ -46,26 +69,12 @@ query&amp;lt;-&amp;quot;SELECT yearID,HR FROM Batting WHERE playerID=&#39;ruthba
     </item>
     
     <item>
-      <title>Time Series</title>
-      <link>/2017/07/23/time-series/</link>
-      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2017/07/23/time-series/</guid>
-      <description>The x axis represents time, while the y is variable of your choice. First we load the libraries
-library(Lahman)library(sqldf)library(devtools)library(ggplot2)Then we must extract the data, in order to get the time series.
-query&amp;lt;-&amp;quot;SELECT yearID,HR FROM Batting WHERE playerID=&amp;#39;ruthba01&amp;#39;&amp;quot;result&amp;lt;-sqldf(query)ggplot()+geom_point(data=result,aes(x=yearID,y=HR),color=&amp;quot;black&amp;quot;)+geom_line(data=result,aes(x=yearID,y=HR),color=&amp;quot;blue&amp;quot;)+ggtitle(&amp;quot;Ruth&amp;#39;s Homerun Totals Through the Years&amp;quot;)+xlab(&amp;quot;Year&amp;quot;)+ylab(&amp;quot;Homeruns&amp;quot;)</description>
-    </item>
-    
-    <item>
-      <title>Bar Plots</title>
-      <link>/2016/12/30/bar-plots/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/2016/12/30/bar-plots/</guid>
-      <description>Here I will explain how to create bar plots in R Studio using the Lahman Baseball Package as an example.
-First we must load the libraries:
-library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Next, we must extract the data.
-query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&amp;quot; result&amp;lt;-sqldf(query) result$name&amp;lt;-factor(result$name,levels=result$name) ggplot()+ geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;, color=&#39;blue&#39;,fill=&#39;black&#39;)+ coord_flip()+ xlab(&amp;quot;Team Name&amp;quot;)+ ylab(&amp;quot;Homeruns&amp;quot;)+ ggtitle(&amp;quot;1980 Team Homerun Distribution&amp;quot;)  </description>
+      <guid>/1/01/01/</guid>
+      <description>Bar Plotscode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
     </item>
     
     <item>
@@ -83,26 +92,7 @@ query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/1/01/01/</guid>
-      <description>Bar Plotscode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/</guid>
-      <description>Bar Plotscode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
-    </item>
-    
-    <item>
-      <title>Histograms</title>
-      <link>/1/01/01/histograms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/histograms/</guid>
-      <description>When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:
-library(Lahman) library(sqldf) library(ggplot2)  query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;)  </description>
+      <description>Scatter Plotscode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
     </item>
     
   </channel>

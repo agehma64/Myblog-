@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scatter Plots on A Hugo website</title>
+    <link>/tags/scatter-plots/</link>
+    <description>Recent content in Scatter Plots on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/scatter-plots/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scatter Plots</title>
+      <link>/2017/12/16/scatter-plots/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/16/scatter-plots/</guid>
+      <description>If one would like to find the career strikeouts versus homeruns for great hitters within the baseball world, they can make a scatterplot to show the data found. One can do this using R code, like so.
+First we must load the necessary packages:
+library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Then we must extract the data:
+query&amp;lt;-&amp;quot;SELECT playerID,sum(HR) AS career_HR, sum(SO) AS career_SO FROM Batting GROUP BY playerID HAVING sum(HR)&amp;gt;=400&amp;quot; result&amp;lt;-sqldf(query) #visualizing data ggplot()+ geom_point(data=result,aes(x=career_SO,y=career_HR), size=1,color=&amp;quot;green&amp;quot;)+ ggtitle(&amp;quot;Career Strikeouts v.</description>
+    </item>
+    
+  </channel>
+</rss>

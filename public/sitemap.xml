@@ -8,7 +8,12 @@
   </url>
   
   <url>
-    <loc>/2017/12/16/time-series/</loc>
+    <loc>/2017/12/16/histograms/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/12/16/scatter-plots/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,13 +23,8 @@
   </url>
   
   <url>
-    <loc>/2017/07/23/time-series/</loc>
-    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2016/12/30/bar-plots/</loc>
-    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
+    <loc>/2017/12/16/time-series/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -73,7 +73,15 @@
   </url>
   
   <url>
-    <loc>/1/01/01/histograms/</loc>
+    <loc>/tags/histograms/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/histograms/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -89,12 +97,6 @@
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2017-07-23T21:13:14-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/r-markdown/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -102,6 +104,18 @@
   
   <url>
     <loc>/tags/regression/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/scatter-plots/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/scatter-plots/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

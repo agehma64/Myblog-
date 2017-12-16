@@ -21,11 +21,20 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Sun, 23 Jul 2017 21:13:14 -0500</pubDate>
+      <title>Histograms</title>
+      <link>/categories/histograms/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/r/</guid>
+      <guid>/categories/histograms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scatter Plots</title>
+      <link>/categories/scatter-plots/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/scatter-plots/</guid>
       <description></description>
     </item>
     
