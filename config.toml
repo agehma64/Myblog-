@@ -15,6 +15,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/agehma64/Myblog-/edit/master/config.toml"
+    
+[[menu.main]]
+    name = "Andrew's Data Science Blog" 
 
 [params]
     description = "A website built through Hugo and blogdown."
