@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bar Plots on A Hugo website</title>
+    <link>/categories/bar-plots/</link>
+    <description>Recent content in Bar Plots on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/bar-plots/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bar Plots</title>
+      <link>/2017/12/16/bar-plots/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/16/bar-plots/</guid>
+      <description>Here I will explain how to create bar plots in R Studio using the Lahman Baseball Package as an example.
+First we must load the libraries:
+library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Next, we must extract the data.
+query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&amp;quot; result&amp;lt;-sqldf(query) result$name&amp;lt;-factor(result$name,levels=result$name) ggplot()+ geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;, color=&#39;blue&#39;,fill=&#39;black&#39;)+ coord_flip()+ xlab(&amp;quot;Team Name&amp;quot;)+ ylab(&amp;quot;Homeruns&amp;quot;)+ ggtitle(&amp;quot;1980 Team Homerun Distribution&amp;quot;)  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2017/12/16/bar-plots/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/12/16/time-series/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
@@ -40,13 +45,30 @@
   </url>
   
   <url>
+    <loc>/1/01/01/</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/tags/bar-plot/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/bar-plots/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

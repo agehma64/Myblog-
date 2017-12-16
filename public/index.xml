@@ -12,6 +12,18 @@
     
     
     <item>
+      <title>Bar Plots</title>
+      <link>/2017/12/16/bar-plots/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/16/bar-plots/</guid>
+      <description>Here I will explain how to create bar plots in R Studio using the Lahman Baseball Package as an example.
+First we must load the libraries:
+library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Next, we must extract the data.
+query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&amp;quot; result&amp;lt;-sqldf(query) result$name&amp;lt;-factor(result$name,levels=result$name) ggplot()+ geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;, color=&#39;blue&#39;,fill=&#39;black&#39;)+ coord_flip()+ xlab(&amp;quot;Team Name&amp;quot;)+ ylab(&amp;quot;Homeruns&amp;quot;)+ ggtitle(&amp;quot;1980 Team Homerun Distribution&amp;quot;)  </description>
+    </item>
+    
+    <item>
       <title>Time Series</title>
       <link>/2017/12/16/time-series/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
@@ -53,7 +65,7 @@ query&amp;lt;-&amp;quot;SELECT yearID,HR FROM Batting WHERE playerID=&amp;#39;ru
       <description>Here I will explain how to create bar plots in R Studio using the Lahman Baseball Package as an example.
 First we must load the libraries:
 library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Next, we must extract the data.
-![]()</description>
+query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&amp;quot; result&amp;lt;-sqldf(query) result$name&amp;lt;-factor(result$name,levels=result$name) ggplot()+ geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;, color=&#39;blue&#39;,fill=&#39;black&#39;)+ coord_flip()+ xlab(&amp;quot;Team Name&amp;quot;)+ ylab(&amp;quot;Homeruns&amp;quot;)+ ggtitle(&amp;quot;1980 Team Homerun Distribution&amp;quot;)  </description>
     </item>
     
     <item>
@@ -83,6 +95,15 @@ Thank you to Dr. Redmond!</description>
       
       <guid>/1/01/01/</guid>
       <description>Histogramscode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>Bar Plotscode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
     </item>
     
     <item>
