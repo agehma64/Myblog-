@@ -15,6 +15,22 @@ library(ggplot2)
 ``` 
 
 Next, we must extract the data. 
+```
+query<-"SELECT name,HR FROM Teams WHERE yearID=1980
+ORDER BY HR"
+result<-sqldf(query)
 
-![]()
+result$name<-factor(result$name,levels=result$name)
+
+
+ggplot()+
+  geom_bar(data=result,aes(x=name,y=HR),stat='identity',
+           color='blue',fill='black')+
+  coord_flip()+
+  xlab("Team Name")+
+  ylab("Homeruns")+
+  ggtitle("1980 Team Homerun Distribution")
+```   
+
+![](https://hutton.netlify.com/post/2017-10-10-bar-plot_files/figure-html/unnamed-chunk-2-1.png)
 
