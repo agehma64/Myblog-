@@ -1,6 +1,7 @@
 name = "Academic"
 license = "MIT"
 licenselink = "https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md"
+theme = ""
 description = "Easily create beautifully simple academic or personal sites"
 homepage = "https://github.com/gcushen/hugo-academic"
 min_version = 0.30
@@ -38,6 +39,6 @@ features = ["academic profile",
     name = "My Github"
     url = "https://github.com/agehma64/Myblog-"
     
-[[photo.main]]
+[[photo.body]]
     url = "https://www.facebook.com/photo.php?fbid=107213249696548&set=a.107202966364243.1073741826.100012236195395&type=3" 
     
