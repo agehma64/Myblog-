@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.31.1" />
 
 
-<title>About - A Hugo website</title>
-<meta property="og:title" content="About - A Hugo website">
+<title>Histograms - A Hugo website</title>
+<meta property="og:title" content="Histograms - A Hugo website">
 
 
 
@@ -16,6 +16,11 @@
 
 
 
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
@@ -54,17 +59,35 @@
 
   <article class="article">
     
+    <span class="article-duration">1 min read</span>
+    
 
-    <h1 class="article-title">About</h1>
+    <h1 class="article-title">Histograms</h1>
 
+    
+    <span class="article-date">0001/01/01</span>
     
 
     <div class="article-content">
-      <p>This blog is meant to explain the course content that we learned during the first half of the year regarding Bar Plots, Histograms, Scatterplots, and Timeseries.</p>
+      <p>When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:</p>
 
-<p>I will include all the steps on how to do so through the seperate links on the home page</p>
+<pre><code>library(Lahman)
+library(sqldf)
+library(ggplot2)
+</code></pre>
 
-<p>Thank you to Dr. Redmond!</p>
+<pre><code>query&lt;-&quot;SELECT weight FROM Master&quot;
+
+result&lt;-sqldf(query)
+
+ggplot()+
+
+geom_histogram(data=result,aes(x=weight),color=&quot;blue&quot;,fill=&quot;yellow&quot;,bins=50)+
+
+ggtitle(&quot;Body-Weight Distribution for Baseball Players&quot;)
+</code></pre>
+
+<p><img src="https://hutton.netlify.com/post/2017-10-10-histogram_files/figure-html/unnamed-chunk-2-1.png" alt="Histogram" /></p>
 
     </div>
   </article>
@@ -87,6 +110,18 @@
 
     </div>
     
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 

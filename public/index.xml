@@ -46,26 +46,6 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
-      <title>Histograms</title>
-      <link>/2015/01/01/histograms/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>/2015/01/01/histograms/</guid>
-      <description>When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:
-library(Lahman) library(sqldf) library(ggplot2)  query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;)  </description>
-    </item>
-    
-    <item>
-      <title>Histograms</title>
-      <link>/2015/01/01/histograms/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>/2015/01/01/histograms/</guid>
-      <description>When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:
-library(Lahman) library(sqldf) library(ggplot2)  query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;)  </description>
-    </item>
-    
-    <item>
       <title></title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -90,6 +70,16 @@ library(Lahman) library(sqldf) library(ggplot2)  query&amp;lt;-&amp;quot;SELECT 
       
       <guid>/1/01/01/</guid>
       <description>Bar Plotscode{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
+    </item>
+    
+    <item>
+      <title>Histograms</title>
+      <link>/1/01/01/histograms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/histograms/</guid>
+      <description>When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:
+library(Lahman) library(sqldf) library(ggplot2)  query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;)  </description>
     </item>
     
   </channel>

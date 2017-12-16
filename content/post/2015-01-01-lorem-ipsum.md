@@ -1,6 +1,6 @@
 ---
 title: "Histograms"
-date: 2015-01-01T13:09:13-06:00
+Date: How to make a Histogram
 ---
 
 When you have one column of data and want to see how the data is spread out, you would use a histogram. First you load the libraries:
