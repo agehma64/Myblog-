@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo website"
+title = "Andrew's Blog"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
@@ -14,12 +14,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "/about/"
     
 [[menu.main]]
+<<<<<<< HEAD
     name = "Andrew Gehman's Data Science Blog"
     
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/agehma64/Myblog-/blob/master/config.toml"
-
+    
 [params]
     description = "A website built through Hugo and blogdown."
 
@@ -36,5 +37,4 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "https://www.facebook.com/photo.php?fbid=107213249696548&l=ff79c01451"
     width = 250
     height = 250
-    alt = "Logo"
 
