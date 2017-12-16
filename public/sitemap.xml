@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2017/12/16/bar-plots/</loc>
+    <loc>/post/bar-plots/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/12/16/histograms/</loc>
+    <loc>/post/histograms/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/12/16/scatter-plots/</loc>
+    <loc>/post/scatter-plots/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/12/16/time-series/</loc>
+    <loc>/post/time-series/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/12/16/time-series/</loc>
+    <loc>/post/time-series/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,25 +33,25 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>/1/01/01/</loc>
+    <loc>/post/2017-12-16-bar-plots/</loc>
   </url>
   
   <url>
-    <loc>/1/01/01/</loc>
+    <loc>/post/2017-12-16-histograms/</loc>
   </url>
   
   <url>
-    <loc>/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>/post/2017-12-16-scatter-plots/</loc>
   </url>
   
   <url>

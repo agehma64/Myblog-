@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.31.1" />
+
+
+<title>Bar Plots - </title>
+<meta property="og:title" content="Bar Plots - ">
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/%3cnil%3e"
+         width=""
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Bar Plots</h1>
+
+    
+    <span class="article-date">2017/12/16</span>
+    
+
+    <div class="article-content">
+      <p>Here I will explain how to create bar plots in R Studio using the Lahman Baseball Package as an example.</p>
+
+<p>First we must load the libraries:</p>
+
+<pre><code>library(Lahman)
+library(sqldf)
+library(devtools)
+library(ggplot2)
+</code></pre>
+
+<p>Next, we must extract the data.</p>
+
+<pre><code>query&lt;-&quot;SELECT name,HR FROM Teams WHERE yearID=1980
+ORDER BY HR&quot;
+result&lt;-sqldf(query)
+
+result$name&lt;-factor(result$name,levels=result$name)
+
+
+ggplot()+
+  geom_bar(data=result,aes(x=name,y=HR),stat='identity',
+           color='blue',fill='black')+
+  coord_flip()+
+  xlab(&quot;Team Name&quot;)+
+  ylab(&quot;Homeruns&quot;)+
+  ggtitle(&quot;1980 Team Homerun Distribution&quot;)
+</code></pre>
+
+<p><img src="https://hutton.netlify.com/post/2017-10-10-bar-plot_files/figure-html/unnamed-chunk-2-1.png" alt="" /></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js//highlight.min.js"></script>
+
+
+
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

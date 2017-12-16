@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scatter Plots on A Hugo website</title>
+    <title>Scatter Plots on </title>
     <link>/categories/scatter-plots/</link>
-    <description>Recent content in Scatter Plots on A Hugo website</description>
+    <description>Recent content in Scatter Plots on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Sat, 16 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/scatter-plots/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +12,10 @@
     
     <item>
       <title>Scatter Plots</title>
-      <link>/2017/12/16/scatter-plots/</link>
+      <link>/post/scatter-plots/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/12/16/scatter-plots/</guid>
+      <guid>/post/scatter-plots/</guid>
       <description>If one would like to find the career strikeouts versus homeruns for great hitters within the baseball world, they can make a scatterplot to show the data found. One can do this using R code, like so.
 First we must load the necessary packages:
 library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Then we must extract the data:

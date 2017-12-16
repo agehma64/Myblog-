@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R Markdown on A Hugo website</title>
+    <title>R Markdown on </title>
     <link>/tags/r-markdown/</link>
-    <description>Recent content in R Markdown on A Hugo website</description>
+    <description>Recent content in R Markdown on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Sat, 16 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +12,10 @@
     
     <item>
       <title>Bar Plots</title>
-      <link>/2017/12/16/bar-plots/</link>
+      <link>/post/bar-plots/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/12/16/bar-plots/</guid>
+      <guid>/post/bar-plots/</guid>
       <description>Here I will explain how to create bar plots in R Studio using the Lahman Baseball Package as an example.
 First we must load the libraries:
 library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Next, we must extract the data.
@@ -25,10 +24,10 @@ query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR&
     
     <item>
       <title>Histograms </title>
-      <link>/2017/12/16/histograms/</link>
+      <link>/post/histograms/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/12/16/histograms/</guid>
+      <guid>/post/histograms/</guid>
       <description>First we must load the necessary packages.
 library(Lahman) library(sqldf) library(ggplot2)  Then we must extract the data in order to get our final results.
 query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf(query) #visualizing the data ggplot()+ geom_histogram(data=result,aes(x=weight),color=&amp;quot;blue&amp;quot;,fill=&amp;quot;yellow&amp;quot;,bins=50)+ ggtitle(&amp;quot;Body-Weight Distribution for Baseball Players&amp;quot;)  </description>
@@ -36,10 +35,10 @@ query&amp;lt;-&amp;quot;SELECT weight FROM Master&amp;quot; result&amp;lt;-sqldf
     
     <item>
       <title>Scatter Plots</title>
-      <link>/2017/12/16/scatter-plots/</link>
+      <link>/post/scatter-plots/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/12/16/scatter-plots/</guid>
+      <guid>/post/scatter-plots/</guid>
       <description>If one would like to find the career strikeouts versus homeruns for great hitters within the baseball world, they can make a scatterplot to show the data found. One can do this using R code, like so.
 First we must load the necessary packages:
 library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Then we must extract the data:
@@ -48,10 +47,10 @@ query&amp;lt;-&amp;quot;SELECT playerID,sum(HR) AS career_HR, sum(SO) AS career_
     
     <item>
       <title>Time Series</title>
-      <link>/2017/12/16/time-series/</link>
+      <link>/post/time-series/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/12/16/time-series/</guid>
+      <guid>/post/time-series/</guid>
       <description>The x axis represents time, while the y is variable of your choice. First we load the libraries
 library(Lahman)library(sqldf)library(devtools)library(ggplot2)Then we must extract the data, in order to get the time series.
 query&amp;lt;-&amp;quot;SELECT yearID,HR FROM Batting WHERE playerID=&amp;#39;ruthba01&amp;#39;&amp;quot;result&amp;lt;-sqldf(query)ggplot()+geom_point(data=result,aes(x=yearID,y=HR),color=&amp;quot;black&amp;quot;)+geom_line(data=result,aes(x=yearID,y=HR),color=&amp;quot;blue&amp;quot;)+ggtitle(&amp;quot;Ruth&amp;#39;s Homerun Totals Through the Years&amp;quot;)+xlab(&amp;quot;Year&amp;quot;)+ylab(&amp;quot;Homeruns&amp;quot;)</description>
@@ -59,10 +58,10 @@ query&amp;lt;-&amp;quot;SELECT yearID,HR FROM Batting WHERE playerID=&amp;#39;ru
     
     <item>
       <title>Time Series </title>
-      <link>/2017/12/16/time-series/</link>
+      <link>/post/time-series/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/12/16/time-series/</guid>
+      <guid>/post/time-series/</guid>
       <description>The x axis represents time, while the y is variable of your choice. First we load the libraries
 library(Lahman) library(sqldf) library(devtools) library(ggplot2)  Then we must extract the data, in order to get the time series.
 query&amp;lt;-&amp;quot;SELECT yearID,HR FROM Batting WHERE playerID=&#39;ruthba01&#39;&amp;quot; result&amp;lt;-sqldf(query) ggplot()+ geom_point(data=result,aes(x=yearID,y=HR),color=&amp;quot;black&amp;quot;)+ geom_line(data=result,aes(x=yearID,y=HR),color=&amp;quot;blue&amp;quot;)+ ggtitle(&amp;quot;Ruth&#39;s Homerun Totals Through the Years&amp;quot;)+ xlab(&amp;quot;Year&amp;quot;)+ ylab(&amp;quot;Homeruns&amp;quot;)  </description>

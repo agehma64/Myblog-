@@ -1,41 +1,32 @@
-baseurl = "/"
-languageCode = "en-us"
-title = "Andrew's Blog"
-theme = "hugo-lithium-theme"
-googleAnalytics = ""
-disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+name = "Academic"
+license = "MIT"
+licenselink = "https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md"
+description = "Easily create beautifully simple academic or personal sites"
+homepage = "https://github.com/gcushen/hugo-academic"
+min_version = 0.30
+tags = ["academic",
+        "portfolio",
+        "responsive",
+        "student",
+        "personal",
+        "university",
+        "blog",
+        "minimal"
+        ]
+features = ["academic profile",
+            "research publication system",
+            "projects",
+            "blog",
+            "teaching",
+            "contact"
+            ]
 
-[permalinks]
-    post =
+[author]
+  name = "George Cushen"
+  homepage = "https://georgecushen.com"
 
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-    
-[[menu.main]]
-<<<<<<< HEAD
-    name = "Andrew Gehman's Data Science Blog"
-    
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/agehma64/Myblog-/blob/master/config.toml"
-    
-[params]
-    description = "A website built through Hugo and blogdown."
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.11.0"
-    highlightjsCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
-    MathJaxCDN = "//cdn.bootcss.com"
-    MathJaxVersion = "2.7.1"
-
-    [params.logo]
-    url = "https://www.facebook.com/photo.php?fbid=107213249696548&l=ff79c01451"
-    width = 250
-    height = 250
-
-    
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
